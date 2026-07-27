@@ -14,27 +14,42 @@ This project is developed for the IoT Security course.
 - Understand ECDH Key Exchange
 - Generate Shared Secret
 - Derive Session Key
-- Encrypt Sensor Data
-- Analyze Security Risks
+- Encrypt Sensor Data using AES-GCM
+- Analyze Security Risks (MITM, Static Keys)
 
 ---
 
 ## Project Structure
 
-demo/
-Python source code
-
-diagrams/
-Architecture and Handshake diagrams
-
-docs/
-Report and screenshots
-
-references/
-Reference materials
-
-output/
-Output demo
+secure-key-exchange-iot-server/
+│
+├── 📁 src/                        # Python source code
+│   ├── client.py                  # IoT Device (Client)
+│   ├── server.py                  # Server
+│   ├── crypto_utils.py            # Cryptographic utilities
+│   ├── config.py                  # Configuration settings
+│   ├── gui.py                     # Tkinter GUI
+│   └── iot_tls_demo.py           # Entry point
+│
+├── 📁 results/                    # Results and output
+│   ├── images/                    # System diagrams
+│   │   ├── system_architecture.png
+│   │   ├── tls_handshake.png
+│   │   ├── ecdh_process.png
+│   │   └── gui/                   # GUI screenshots
+│   ├── demo_output.txt            # Demo execution log
+│   └── session_keys.log           # Key generation logs
+│
+├── 📁 reports/                    # Documentation
+│   ├── report.docx                # Full report (Vietnamese)
+│   └── report.pdf                 # PDF version
+│
+├── 📁 references/                 # Reference materials
+│   └── references.md              # References list
+│
+├── 📄 README.md                   # This file
+├── 📄 LICENSE                     # MIT License
+└── 📄 .gitignore                  # Git ignore rules
 
 ---
 
