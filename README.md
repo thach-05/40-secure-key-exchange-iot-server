@@ -224,10 +224,10 @@ KB-04	Sử dụng khóa tĩnh (Static Keys)	☑ Xác thực Server + ☑ Khóa t
 
 Ảnh minh chứng:
 Kịch bản	
-Xác thực thành công	https://results/gui/handshake_success.png
-Xác thực thất bại (MITM)	https://results/gui/handshake_fail.png
-Bỏ qua xác thực Server https://results/gui/skip_auth.png
-ử dụng khóa tĩnh https://results/gui/static_keys.png
+Xác thực thành công	(results/gui/handshake_success.png)
+Xác thực thất bại (MITM)	(results/gui/handshake_fail.png)
+Bỏ qua xác thực Server (results/gui/skip_auth.png)
+ử dụng khóa tĩnh (results/gui/static_keys.png)
 * Công nghệ sử dụng
 Công nghệ	Phiên bản	Mục đích
 Python	3.11	Ngôn ngữ lập trình
