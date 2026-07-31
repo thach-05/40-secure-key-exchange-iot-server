@@ -217,16 +217,17 @@ Log Client (khung phải): Hiển thị hoạt động của thiết bị IoT
 
 * Các kịch bản demo
 ID	Kịch bản	Checkbox	Kết quả mong đợi
-TC-01	Xác thực Server thành công	☑ Xác thực Server	Log "Xác thực THÀNH CÔNG"
-TC-02	Xác thực Server thất bại (MITM)	☑ Xác thực Server + ☑ MITM	Log "Xác thực THẤT BẠI"
-TC-03	Bỏ qua xác thực Server	☐ Xác thực Server + ☑ MITM	Log "Bỏ qua xác thực"
-TC-04	Sử dụng khóa tĩnh (Static Keys)	☑ Xác thực Server + ☑ Khóa tĩnh	Log "Sử dụng khóa tĩnh"
-TC-05	End-to-End với dữ liệu cảm biến	☑ Xác thực Server	JSON được mã hóa/giải mã
+KB-01	Xác thực Server thành công	☑ Xác thực Server	Log "Xác thực THÀNH CÔNG"
+KB-02	Xác thực Server thất bại (MITM)	☑ Xác thực Server + ☑ MITM	Log "Xác thực THẤT BẠI"
+KB-03	Bỏ qua xác thực Server	☐ Xác thực Server + ☑ MITM	Log "Bỏ qua xác thực"
+KB-04	Sử dụng khóa tĩnh (Static Keys)	☑ Xác thực Server + ☑ Khóa tĩnh	Log "Sử dụng khóa tĩnh"
+
 Ảnh minh chứng:
-Kịch bản	Hình ảnh
-Xác thực thành công	https://results/images/gui/handshake_success.png
-Xác thực thất bại (MITM)	https://results/images/gui/handshake_fail.png
-End-to-End dữ liệu	https://results/images/gui/data_decrypted.png
+Kịch bản	
+Xác thực thành công	https://results/gui/handshake_success.png
+Xác thực thất bại (MITM)	https://results/gui/handshake_fail.png
+Bỏ qua xác thực Server https://results/gui/skip_auth.png
+ử dụng khóa tĩnh https://results/gui/static_keys.png
 * Công nghệ sử dụng
 Công nghệ	Phiên bản	Mục đích
 Python	3.11	Ngôn ngữ lập trình
