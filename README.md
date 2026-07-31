@@ -197,11 +197,14 @@ cd src
 python iot_tls_demo.py
 ### Bước 5: Sử dụng giao diện
 5.1 Chọn chế độ kiểm thử (tích checkbox):
+
 Checkbox	Mô tả
+
 ☑ Xác thực Server	Bật/tắt kiểm tra fingerprint server
 ☑ Dùng khóa tĩnh	Bật/tắt chế độ khóa cố định (Static Keys)
 ☑ Giả lập MITM	Bật/tắt chế độ server giả mạo
 5.2 Chạy demo:
+
 "Khởi động Server" → Server bắt đầu lắng nghe kết nối
 
 "Khởi động Client" → Client kết nối và thực hiện handshake
@@ -211,11 +214,12 @@ Checkbox	Mô tả
 "Xóa Log" → Xóa log trên cả hai khung
 
 5.3 Quan sát kết quả:
+
 Log Server (khung trái): Hiển thị hoạt động của máy chủ
 
 Log Client (khung phải): Hiển thị hoạt động của thiết bị IoT
 
-* Các kịch bản demo
+### Các kịch bản demo
 ID	Kịch bản	Checkbox	Kết quả mong đợi
 KB-01	Xác thực Server thành công	☑ Xác thực Server	Log "Xác thực THÀNH CÔNG"
 KB-02	Xác thực Server thất bại (MITM)	☑ Xác thực Server + ☑ MITM	Log "Xác thực THẤT BẠI"
@@ -224,11 +228,11 @@ KB-04	Sử dụng khóa tĩnh (Static Keys)	☑ Xác thực Server + ☑ Khóa t
 
 Ảnh minh chứng:
 Kịch bản	
-Xác thực thành công	(results/gui/handshake_success.png)
-Xác thực thất bại (MITM)	(results/gui/handshake_fail.png)
-Bỏ qua xác thực Server (results/gui/skip_auth.png)
-ử dụng khóa tĩnh (results/gui/static_keys.png)
-* Công nghệ sử dụng
+![Xác thực thành công](results/gui/handshake_success.png)
+![Xác thực thất bại (MITM)](results/gui/handshake_fail.png)
+![Bỏ qua xác thực Server](results/gui/skip_auth.png)
+![Sử dụng khóa tĩnh](results/gui/static_keys.png)
+### Công nghệ sử dụng
 Công nghệ	Phiên bản	Mục đích
 Python	3.11	Ngôn ngữ lập trình
 Cryptography	Latest	ECDH, HKDF, AES-GCM
@@ -236,7 +240,7 @@ Tkinter	Built-in	Giao diện đồ họa
 Socket	Built-in	Kết nối mạng
 Git	Latest	Quản lý phiên bản
 Draw.io	Online	Vẽ sơ đồ hệ thống
- Tài liệu tham khảo
+### Tài liệu tham khảo
 STT	Nguồn	Mô tả
 1	Mbed TLS	Tham khảo TLS Handshake và ECDH
 2	OWASP ISVS	Tiêu chuẩn bảo mật IoT
