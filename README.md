@@ -101,33 +101,61 @@ text
 
 ## Cấu trúc dự án
 secure-key-exchange-iot-server/
-│
+
 ├── src/ # Mã nguồn Python
+
 │ ├── client.py # Thiết bị IoT (Client)
+
 │ ├── server.py # Máy chủ (Server)
+
 │ ├── crypto_utils.py # Tiện ích mật mã
+
 │ ├── config.py # Cấu hình hệ thống
+
+
 │ ├── gui.py # Giao diện Tkinter
+
 │ └── iot_tls_demo.py # Entry point
+
 │
+
 ├── results/ # Kết quả và hình ảnh
+
 │ ├── images/ # Sơ đồ hệ thống
+
 │ │ ├── system_architecture.png
+
 │ │ ├── tls_handshake.png
+
 │ │ ├── ecdh_process.png
+
 │ │ └── gui/ # Ảnh chụp giao diện
+
 │ ├── demo_output.txt # Log demo
+
 │ └── session_keys.log # Log sinh khóa
+
 │
+
 ├── reports/ # Tài liệu báo cáo
+
 │ ├── report.docx # Báo cáo Word
+
 │ └── report.pdf # Báo cáo PDF
+
 │
+
 ├── references/ # Tài liệu tham khảo
+
+
 │ └── references.md # Danh mục tham khảo
+
 │
+
 ├── README.md # File này
+
 ├── LICENSE # Giấy phép MIT
+
 └── .gitignore # Quy tắc bỏ qua file
 
 
@@ -216,14 +244,22 @@ STT	Nguồn	Mô tả
 5	Cryptography.io	Thư viện mật mã Python
 6	Stallings (2020)	Sách Cryptography and Network Security
 ## Tác giả
-Thông tin	Chi tiết
-Họ tên	Huỳnh Hồng Ngọc Thạch
-MSSV	231A010845
-Học phần	Bảo mật IoT (INT4410)
+Thông tin chi tiết
+
+Họ tên:	Huỳnh Hồng Ngọc Thạch
+
+MSSV:	231A010845
+
+Học phần:	Bảo mật IoT (INT4410)
+
 Lớp	INT441001
+
 Giảng viên	Thầy Hồ Nhựt Minh
+
 Trường	Đại học Văn Hiến
+
 Năm học	2025-2026
+
 ## Giấy phép
 Dự án này được cấp phép theo MIT License - xem file LICENSE để biết thêm chi tiết.
 
