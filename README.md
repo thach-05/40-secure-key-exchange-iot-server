@@ -1,7 +1,7 @@
-# 🔐 Trao đổi khóa an toàn giữa Thiết bị IoT và Server
+# Trao đổi khóa an toàn giữa Thiết bị IoT và Server
 ---
 
-## 📖 Tổng quan
+## Tổng quan
 
 Đồ án này mô phỏng quá trình trao đổi khóa an toàn giữa thiết bị IoT và máy chủ sử dụng **Elliptic Curve Diffie-Hellman (ECDH)** và cơ chế **TLS Handshake**. Sau khi trao đổi khóa, cả hai bên cùng tạo ra Session Key và sử dụng **AES-GCM** để mã hóa dữ liệu cảm biến trước khi truyền qua mạng.
 
@@ -9,20 +9,20 @@
 
 ---
 
-## 🎯 Mục tiêu
+## Mục tiêu
 
-- ✅ Tìm hiểu và mô phỏng TLS Handshake
-- ✅ Triển khai trao đổi khóa ECDH trên đường cong SECP256R1
-- ✅ Tạo Shared Secret và dẫn xuất Session Key bằng HKDF
-- ✅ Mã hóa và giải mã dữ liệu cảm biến bằng AES-GCM
-- ✅ Xác thực Server bằng fingerprint SHA-256
-- ✅ Phân tích rủi ro bảo mật (MITM, Static Keys)
+-  Tìm hiểu và mô phỏng TLS Handshake
+-  Triển khai trao đổi khóa ECDH trên đường cong SECP256R1
+-  Tạo Shared Secret và dẫn xuất Session Key bằng HKDF
+-  Mã hóa và giải mã dữ liệu cảm biến bằng AES-GCM
+-  Xác thực Server bằng fingerprint SHA-256
+-  Phân tích rủi ro bảo mật (MITM, Static Keys)
 
 ---
 
-## 🏗️ Kiến trúc hệ thống
+## Kiến trúc hệ thống
 
-![Kiến trúc hệ thống](results/images/system_architecture.png)
+![Kiến trúc hệ thống](results/system_architecture.png)
 
 *Hình 1: Kiến trúc tổng thể hệ thống trao đổi khóa an toàn*
 
@@ -39,9 +39,9 @@
 
 ---
 
-## 🔄 Quy trình TLS Handshake
+## Quy trình TLS Handshake
 
-![Quy trình TLS Handshake](results/images/tls_handshake.png)
+![Quy trình TLS Handshake](results/tls_handshake.png)
 
 *Hình 2: Quy trình TLS Handshake mô phỏng*
 
@@ -57,9 +57,9 @@
 
 ---
 
-## 🔑 Quá trình ECDH
+## Quá trình ECDH
 
-![Quá trình ECDH](results/images/ecdh_process.png)
+![Quá trình ECDH](results/ecdh_process.png)
 
 *Hình 3: Quá trình trao đổi khóa ECDH*
 
@@ -82,9 +82,9 @@ text
 
 ---
 
-## 🖥️ Giao diện chương trình
+## Giao diện chương trình
 
-![Giao diện chính](results/images/gui/gui_main.png)
+![Giao diện chính](results/gui/gui_main.png)
 
 *Hình 4: Giao diện chương trình mô phỏng*
 
@@ -99,10 +99,10 @@ text
 
 ---
 
-## 📁 Cấu trúc dự án
+## Cấu trúc dự án
 secure-key-exchange-iot-server/
 │
-├── 📁 src/ # Mã nguồn Python
+├── src/ # Mã nguồn Python
 │ ├── client.py # Thiết bị IoT (Client)
 │ ├── server.py # Máy chủ (Server)
 │ ├── crypto_utils.py # Tiện ích mật mã
@@ -110,7 +110,7 @@ secure-key-exchange-iot-server/
 │ ├── gui.py # Giao diện Tkinter
 │ └── iot_tls_demo.py # Entry point
 │
-├── 📁 results/ # Kết quả và hình ảnh
+├── results/ # Kết quả và hình ảnh
 │ ├── images/ # Sơ đồ hệ thống
 │ │ ├── system_architecture.png
 │ │ ├── tls_handshake.png
@@ -119,22 +119,22 @@ secure-key-exchange-iot-server/
 │ ├── demo_output.txt # Log demo
 │ └── session_keys.log # Log sinh khóa
 │
-├── 📁 reports/ # Tài liệu báo cáo
+├── reports/ # Tài liệu báo cáo
 │ ├── report.docx # Báo cáo Word
 │ └── report.pdf # Báo cáo PDF
 │
-├── 📁 references/ # Tài liệu tham khảo
+├── references/ # Tài liệu tham khảo
 │ └── references.md # Danh mục tham khảo
 │
-├── 📄 README.md # File này
-├── 📄 LICENSE # Giấy phép MIT
-└── 📄 .gitignore # Quy tắc bỏ qua file
+├── README.md # File này
+├── LICENSE # Giấy phép MIT
+└── .gitignore # Quy tắc bỏ qua file
 
-text
+
 
 ---
 
-## 🚀 Hướng dẫn cài đặt và chạy demo
+## Hướng dẫn cài đặt và chạy demo
 
 ### Yêu cầu hệ thống
 
@@ -149,25 +149,25 @@ text
 3. Kiểm tra cài đặt:
    ```bash
    python --version
-Bước 2: Tải mã nguồn
+### Bước 2: Tải mã nguồn
 bash
-# Clone repository từ GitHub
+ Clone repository từ GitHub
 git clone https://github.com/thach-05/40-secure-key-exchange-iot-server.git
 
-# Di chuyển vào thư mục dự án
+ Di chuyển vào thư mục dự án
 cd 40-secure-key-exchange-iot-server
-Bước 3: Cài đặt thư viện
+### Bước 3: Cài đặt thư viện
 bash
-# Cài đặt thư viện cryptography
+ Cài đặt thư viện cryptography
 pip install cryptography
-Bước 4: Chạy chương trình
+### Bước 4: Chạy chương trình
 bash
-# Di chuyển vào thư mục src
+ Di chuyển vào thư mục src
 cd src
 
-# Chạy chương trình
+ Chạy chương trình
 python iot_tls_demo.py
-Bước 5: Sử dụng giao diện
+### Bước 5: Sử dụng giao diện
 5.1 Chọn chế độ kiểm thử (tích checkbox):
 Checkbox	Mô tả
 ☑ Xác thực Server	Bật/tắt kiểm tra fingerprint server
@@ -187,7 +187,7 @@ Log Server (khung trái): Hiển thị hoạt động của máy chủ
 
 Log Client (khung phải): Hiển thị hoạt động của thiết bị IoT
 
-🧪 Các kịch bản demo
+* Các kịch bản demo
 ID	Kịch bản	Checkbox	Kết quả mong đợi
 TC-01	Xác thực Server thành công	☑ Xác thực Server	Log "Xác thực THÀNH CÔNG"
 TC-02	Xác thực Server thất bại (MITM)	☑ Xác thực Server + ☑ MITM	Log "Xác thực THẤT BẠI"
@@ -199,7 +199,7 @@ Kịch bản	Hình ảnh
 Xác thực thành công	https://results/images/gui/handshake_success.png
 Xác thực thất bại (MITM)	https://results/images/gui/handshake_fail.png
 End-to-End dữ liệu	https://results/images/gui/data_decrypted.png
-🛠️ Công nghệ sử dụng
+* Công nghệ sử dụng
 Công nghệ	Phiên bản	Mục đích
 Python	3.11	Ngôn ngữ lập trình
 Cryptography	Latest	ECDH, HKDF, AES-GCM
@@ -207,7 +207,7 @@ Tkinter	Built-in	Giao diện đồ họa
 Socket	Built-in	Kết nối mạng
 Git	Latest	Quản lý phiên bản
 Draw.io	Online	Vẽ sơ đồ hệ thống
-📚 Tài liệu tham khảo
+ Tài liệu tham khảo
 STT	Nguồn	Mô tả
 1	Mbed TLS	Tham khảo TLS Handshake và ECDH
 2	OWASP ISVS	Tiêu chuẩn bảo mật IoT
@@ -215,7 +215,7 @@ STT	Nguồn	Mô tả
 4	RFC 5869 - HKDF	Hàm dẫn xuất khóa HKDF
 5	Cryptography.io	Thư viện mật mã Python
 6	Stallings (2020)	Sách Cryptography and Network Security
-👨‍💻 Tác giả
+## Tác giả
 Thông tin	Chi tiết
 Họ tên	Huỳnh Hồng Ngọc Thạch
 MSSV	231A010845
@@ -224,10 +224,10 @@ Lớp	INT441001
 Giảng viên	Thầy Hồ Nhựt Minh
 Trường	Đại học Văn Hiến
 Năm học	2025-2026
-📄 Giấy phép
+## Giấy phép
 Dự án này được cấp phép theo MIT License - xem file LICENSE để biết thêm chi tiết.
 
-🙏 Lời cảm ơn
+## Lời cảm ơn
 Xin chân thành cảm ơn:
 
 Thầy Hồ Nhựt Minh đã hướng dẫn và hỗ trợ trong suốt quá trình thực hiện đồ án
@@ -236,9 +236,9 @@ Khoa Công Nghệ - Thông Tin đã tạo điều kiện học tập và nghiên
 
 Các nguồn tham khảo đã cung cấp kiến thức quý báu
 
-📞 Liên hệ
+## Liên hệ
 GitHub: thach-05
 
-Email: [Email của bạn]
+Email: hnthach.cv@gmail.com
 
 Trường: Đại học Văn Hiến
